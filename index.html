@@ -7,8 +7,69 @@
      
 </head>
 <body>
-    <h1>Estoy en ello</h1>
-    <h2>Haciendo cambios</h2>
-    <h3>Haciendolo desde mi casa</h3>
+    <h2>Formularios</h2>
+    
+
+
+    <form action="http://ncoge.com/phps/formulario.php" method="get">
+    <table width="100%">
+        <tr>
+            <td width="50%">
+                <fieldset> <legend><b>Datos Personales:</b></legend>
+                Nombre:
+                <input type="text" name="Nombre:"><br>
+                Apellidos:
+                <input type="text" name="Apellido"><br>
+                Correo:
+                <input type="text" name="Correo"><br>
+                Hobbies:
+                <input type="text" name="Hobbies"></fieldset>
+            </td>
+            <td><fieldset><legend><b>Idiomas</b></legend>
+                <b>Inglés</b>
+                <input type="radio" name="sexo" value="Inglés" checked="checked" /> 1
+                <input type="radio" name="sexo" value="Inglés" /> 2
+                <input type="radio" name="sexo" value="Inglés" /> 3
+                <input type="radio" name="sexo" value="Inglés" /> 4
+                <input type="radio" name="sexo" value="Inglés" /> 5
+                <br><b>Francés</b>
+                <input type="radio" name="frances" value="frances" /> 1
+                <input type="radio" name="frances" value="frances" /> 2
+                <input type="radio" name="frances" value="frances" /> 3
+                <input type="radio" name="frances" value="frances" /> 4
+                <input type="radio" name="frances" value="frances" /> 5
+                <br><b>Alemán</b>
+                <input type="radio" name="ale" value="Alemán" /> 1
+                <input type="radio" name="ale" value="Alemán" /> 2
+                <input type="radio" name="ale" value="Alemán" /> 3
+                <input type="radio" name="ale" value="Alemán" /> 4
+                <input type="radio" name="ale" value="Alemán" /> 5
+                </fieldset>
+                </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><fieldset><legend><b>Domino los siguientes programas:</b></legend><input type="checkbox" name="Programa" value="Programa"/>Writer
+            <input type="checkbox" name="Programa" value="Programa"/>Calc<br>
+        <input type="checkbox" name="Programa" value="Programa"/>Base
+    <input type="checkbox" name="Programa" value="Programa"/>Impress</td></fieldset>
+        </tr>
+        <tr>
+            <td></td>
+            <TD><fieldset><legend><b>Trabajo con el siguiente Sistema operativo:</b></legend><label for="so">Sistema operativo</label> <br/>
+                <select id="so" name="so">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option></TD></fieldset>
+            
+            
+            
+        </tr>
+    </table>
+    <input type="reset" name="limpiar" value="Reiniciar" />
+            <input type="image" name="enviar" src="images/check.png" height="50px" alt="Imagen-Check"/>
+    </form>
 </body>
 </html>
